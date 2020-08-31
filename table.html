@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+        
+            #num,#nums{
+              color:blue;
+            }
+            .rows{
+              color:rgb(241, 13, 63);
+            }
+              td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    outline-width: medium;
+    outline-style: dotted;
+    outline-color:rgb(43, 226, 211);
+  }
+  </style>
+        <title>Javascript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       
+        <table id="table">
+            <tr>
+                <th>Sr.No</th>
+                <th>Subject</th>
+                <th>Marks/Grades</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Artifial Intelligence</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Neural Network</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Cryptography</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Information Security</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Python</td>
+                <td>95</td>
+            </tr>
+        </table>
+        <span id="val"></span>
+        <span id="avg"></span>
+
+        
+        <script>
+            
+            var table = document.getElementById("table"), sumVal = 0;
+            var count=0;
+            for(var i = 1; i < table.rows.length; i++)
+            {
+                sumVal = sumVal + parseInt(table.rows[i].cells[2].innerHTML);
+                count++;
+
+            }
+            
+            document.getElementById("val").innerHTML = "Sum Value = " + sumVal;
+            console.log(sumVal);
+            document.getElementById("avg").innerHTML = "avg Value = " + sumVal/count;
+            
+        </script>
+        
+    </body>
+</html>
