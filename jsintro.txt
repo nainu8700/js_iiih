@@ -1,0 +1,40 @@
+What is JavaScript?
+JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc. 
+JavaScript ("JS" for short) is a full-fledged dynamic programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project), the Mozilla Foundation, and the Mozilla Corporation.
+js include:
+
+1. Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.
+2. Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook.
+3. Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.
+
+
+
+Write  hello world:
+const myHeading = document.querySelector('h1');
+myHeading.textContent = 'Hello world!';
+
+
+Variables?
+Variables are containers that store values. You start by declaring a variable with the var or the let keyword.
+EX:
+let varname='Nainu';
+
+ data types?
+String,let varname = 'Nainu';
+Number,	let varname = 30;
+Boolean,	let varname = true;
+Array,	let varname = [1,'abab','cdfd',10];
+Object,let varname = document.querySelector('h3');
+
+
+Operators?
+Addition		6 + 9;
+'Hello ' + 'world!';
+Subtraction, Multiplication, Division		-, *, /	9 - 3;
+
+Assignment	 = this assigns a value to a variable.	=	let varname = 'nainu';
+Equality ===, varname === 4;
+
+
+Events?
+These are code structures that listen for activity in the browser, and run code in response. The most obvious example is handling the click event, which is fired by the browser when you click on something with your mouse. 
