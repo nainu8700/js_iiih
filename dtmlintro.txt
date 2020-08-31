@@ -1,0 +1,19 @@
+Why Use DHTML?
+DHTML makes a webpage dynamic but Javascript also does, the question arises that what different does DHTML do? So the answer is that DHTML has the ability to change a webpages look, content and style once the document has loaded on our demand without changing or deleting everything already existing on the browser’s webpage. DHTML can change the content of a webpage on demand without the browser having to erase everything else, i.e. 
+being able to alter changes on a webpage even after the document has completely loaded.
+
+Advantages:
+Size of the files are compact in compared to other interactional media like Flash or Shockwave, and it downloads faster.
+It is supported by big browser manufacturers like Microsoft and Netscape.
+Highly flexible and easy to make changes.
+Viewer requires no extra plug-ins for browsing through the webpage that uses DHTML, they do not need any extra requirements or special software to view it.
+User time is saved by sending less number of requests to the server. As it is possible to modify and replace elements even after a page is loaded, it is not required to create separate pages for changing styles which in turn saves time in building pages and also reduces the number of requests that are sent to the server.
+It has more advanced functionality than a static HTML. it is capable of holding more content on the web page at the same time.
+
+
+
+Disadvantages:
+It is not supported by all the browsers. It is supported only by recent browsers such as Netscape 6, IE 5.5, and Opera 5 like browsers.
+Learning of DHTML requires a lot of pre-requisites languages such as HTML, CSS, JS, etc should be known to the designer before starting with DHTML which is a long and time-consuming in itself.
+Implementation of different browsers are different. So if it worked in one browser, it might not necessarily work the same way in another browser.
+Even after being great with functionality, DHTML requires a few tools and utilities that are some expensive. For example, the DHTML text editor, Dreamweaver. Along with it the improvement cost of transferring from HTML to DHTML makes cost rise much higher.
