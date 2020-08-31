@@ -17,3 +17,5 @@ It is not supported by all the browsers. It is supported only by recent browsers
 Learning of DHTML requires a lot of pre-requisites languages such as HTML, CSS, JS, etc should be known to the designer before starting with DHTML which is a long and time-consuming in itself.
 Implementation of different browsers are different. So if it worked in one browser, it might not necessarily work the same way in another browser.
 Even after being great with functionality, DHTML requires a few tools and utilities that are some expensive. For example, the DHTML text editor, Dreamweaver. Along with it the improvement cost of transferring from HTML to DHTML makes cost rise much higher.
+
+
