@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <style>
+          input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:cadetblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+a:link{
+  background-color:rgb(43, 183, 226);
+}
+input[type=submit]:hover {
+  background-color:blueviolet;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+        </style>
+        <title>Course Page to Register</title>
+    </head>
+    <body>
+        <div>
+        <form method="POST"  name = "myForms" id="myForms" onsubmit = " return(validating());">
+          <h2 style="text-align:center;">Form</h2>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter First Name Here" ><br>
+
+            <label for="numbr">Phone  number:</label><br>
+            <input type="text" id="numbr" name="num" placeholder="Enter Phone  number Here">
+            <br>
+            <label>Choose your Degree</label>
+            
+            <input type="radio" id="Bachelors" name="course" value="Bachelors">
+            <label for="Bachelors">Bachelors</label>
+                <input type="radio" id="Masters" name="course" value="Masters">
+                <label for="Masters">Masters</label><br>
+            
+                <label>Select Your Course </label><br>
+
+
+                <input type="checkbox" id="WebDevelopment" name="subject" value="Web Development">
+                <label for="WebDevelopment"> Web Development</label><br>
+                <input type="checkbox" id="Android" name="subject" value="Android">
+                <label for="Android">Android</label><br>
+                <input type="checkbox" id="CloudComputing" name="subject" value="Cloud Computing">
+                <label for="CloudComputing">Cloud Computing</label><br>
+               
+                <br>
+               <a> <input type="submit" onclick="myfunc"></a>
+          </form>
+        
+
+    </div>
+
+
+    <span id="result">
+    <footer style="position:fixed;bottom:0;">
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+        </a>
+    </p>
+    <script>
+      function validating(){
+        if( document.myForms.fname.value == "" ) {
+          alert( "Please provide your name!" );
+            document.myForm.fname.focus() ;
+            return false;
+         }
+         if( document.myForms.num.value == "" || isNaN( document.myForms.num.value ) ||
+            document.myForms.num.value.length != 10 ) {
+            alert( "Please provide a valid number" );
+            document.myForm.num.focus() ;
+            return false;
+         }
+         var subject=document.myForms.subject;
+         var check=false;
+         for(var i =subject.length-1;i>=0;i--){
+           if (subject[i].checked){
+             check=true;
+           }
+         }
+         if (check==false){
+           alert('Atleast one subject is required');
+           subject.focus();
+           return false;
+         }
+
+      }
+      function myfunc(){
+      document.getElementById('result').innerHTML=document.getElementById('fname').value;
+      }
+           
+    </script>
+        </body>
+</html>
