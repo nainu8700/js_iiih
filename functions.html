@@ -2,6 +2,21 @@
 <html>
     <head>
         <script>
+            function myname(inputtxt)
+      { 
+          var str=document.getElementById('alerts');
+          if(!((/^[a-zA-Z]+$/.test(str))||str.length==0)){
+              alerts.style.display='block';
+              alerts.innerHTML='only alphabets allowed';
+              flags=false;
+          }
+          else{
+            alerts.style.display='none';
+            flags=true;
+
+              
+          }
+      }
           
 
 
@@ -10,7 +25,7 @@
             }
         </script>
         <title>
-            functions
+            functions and Regular Expressions
         </title>
     </head>
     <body>
@@ -18,6 +33,11 @@
 
         <form>
             <input type="button" onclick="disp()" value="click  here you will be directed to table">
+            <br>
+            <br>
+            <label>Name</label>
+            <input  type='text' id="name" name="name" placeholder="Enter Name:"  required onkeyup='myname();'>
+            <p id="alerts">&nbsp;</p>
         </form>
 
     </body>
