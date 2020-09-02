@@ -35,19 +35,33 @@ var2 = var3;
   }
 
             }
+            function dates(){
+                document.getElementById('resul').innerHTML=Date();
+                
+            }
+            function changeBackground(color) {
+                alert("bg changed")
+                
+            document.body.style.background = color;
+                }
+
+            window.addEventListener("load",function() { changeBackground('#26ae60') });
+
+
             
         </script>
         <title>Control flow</title>
     </head>
-    <body>
+    <body onload="changeBackground()">
         <h1>Check whether number is between 10 to 100</h1>
         <form>
             <input type="text" placeholder="Enter any number" id="num" name="num" >
             <button type="button" onclick="check()">check</button>
             <p id="result"></p>
-         
 
         </form>
-
+        <h1>Events :</h1>
+        <button onclick="dates();">date today is</button>
+        <p id="resul"></p>
     </body>
 </html>
