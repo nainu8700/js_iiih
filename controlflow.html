@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+           var var1 = 0, var2 = 1, var3;
+document.write("Here is the Fibonacci series with 10 values : ");
+while(var1<40)
+{
+document.write(var1 + " ");
+var3 = var1+var2;
+var1 = var2;
+var2 = var3;
+}
+
+
+            function check(){
+                var message;
+                message = document.getElementById("result");
+                message.innerHTML = "";
+             let a=document.getElementById('num').value;
+             try{
+             if(a == "")  throw "empty";
+             if(a < 10)  throw "too low number";
+             if(a > 100)   throw "too large number";
+             if(a>=10  &&  a<=100){
+                throw  'Number is between 10 to 100';
+             }
+             else{
+                throw  'Number is not between 10 to 100';
+
+             }
+            }
+             catch(err) {
+            message.innerHTML = "Input is " + err;
+  }
+
+            }
+            
+        </script>
+        <title>Control flow</title>
+    </head>
+    <body>
+        <h1>Check whether number is between 10 to 100</h1>
+        <form>
+            <input type="text" placeholder="Enter any number" id="num" name="num" >
+            <button type="button" onclick="check()">check</button>
+            <p id="result"></p>
+         
+
+        </form>
+
+    </body>
+</html>
