@@ -5,20 +5,69 @@
 <script>
 $(document).ready(function(){
   $("#hiding").click(function(){
-    $("p").hide();
+    $("#hs").hide();
   });
   $("#disp").click(function(){
-    $("p").show();
+    $("#hs").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#clicks").dblclick(function(){
+    $(this).css("color", "red");
+  });
+});
+
+$(document).ready(function(){
+  $("#btns").click(function(){
+    $("#tog").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#fdbtn").click(function(){
+    $("#second").fadeIn(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#fout").click(function(){
+    $("#out").fadeOut(1000);
   });
 });
 </script>
 </head>
 <body>
 
-
 <button id="hiding">Hide</button>
 <button id="disp">Show</button>
-<p>Hi I'm Nainu Wadhwa .</p>
+<p id='hs'>Hi I'm Nainu Wadhwa .</p>
+<h1>Double-click on para below to see the .dbclick event </h1>
+<pre>
+<p id="clicks">   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et eligendi iste facilis quo,
+   velit nam reiciendis blanditiis, deleniti, animi corporis aliquam tempora repudiandae in. 
+   Tenetur quidem dolorum amet exercitationem laudantium quibusdam sit possimus autem fugit
+   est fuga eaque libero, provident accusantium nesciunt atque aperiam. Aspernatur tempora 
+   iusto pariatur ex necessitatibus.</p>
+   </pre>
+   <h1>Toggle Event</h1>
+   <button id="btns">Toggle button</button>
+   <p id="tog">Internship at serc iiit-h</p>
+
+   <h1>FadeIn Event</h1>
+   <button id="fdbtn">fade In button</button>
+   <div id="second" style="display: none;">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQUd1c8p8tMbQpwnB7c1hhWklfop9xumjiw4g&usqp=CAU">
+</div>
+
+
+
+<h1>Fadeout Event</h1>
+<button id="fout">fade out button</button>
+<div id="out">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQUd1c8p8tMbQpwnB7c1hhWklfop9xumjiw4g&usqp=CAU">
+</div>
+
+
 
 
 </body>
