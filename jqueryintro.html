@@ -34,6 +34,26 @@ $(document).ready(function(){
     $("#out").fadeOut(1000);
   });
 });
+$(document).ready(function(){
+  $("#reqget").click(function(){
+    $.get("getpage.asp", function(data, status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+
+$(document).ready(function(){
+  $("#reqpost").click(function(){
+    $.post("postpage.asp",
+    {
+      name: "Nainu",
+      city: "wadhwa"
+    },
+    function(data,status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
 </script>
 </head>
 <body>
@@ -67,6 +87,14 @@ $(document).ready(function(){
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQUd1c8p8tMbQpwnB7c1hhWklfop9xumjiw4g&usqp=CAU">
 </div>
 
+
+
+<h1>Get function:</h1>
+
+<button id="reqget">Send a GET request</button>
+<h1>Post function:</h1>
+
+<button id="reqpost">Send a Post request</button>
 
 
 
